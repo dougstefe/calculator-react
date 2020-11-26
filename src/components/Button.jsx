@@ -3,8 +3,15 @@ import "./Button.css"
 
 class Button extends Component{
     render() {
+        let classNames = 'button'
+        if(this.props.operation){
+            classNames += ' operation'
+        }
+        if(this.props.colspan){
+            classNames += ` colspan${this.props.colspan}`
+        }
         return (
-            <button onClick={_ => this.props.action(this.props.label)} className={`button${this.props.type ? ' '+this.props.type : ''}${this.props.width ? ' span'+this.props.width : ''}`}>{this.props.label}</button>
+            <button onClick={_ => this.props.action(this.props.label)} className={classNames}>{this.props.label}</button>
         )
     }
 }

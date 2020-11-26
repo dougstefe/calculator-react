@@ -16,9 +16,13 @@
     background-color: #ccc;
 }
 
-.button.span3 {
+.button.colspan3 {
     grid-column: span 3;
 }
+
 .button.operation {
-    background-color: #ddd;
+    background-color: #ccc;
+}
+.button.operation:active {
+    background-color: #bbb;
 }
