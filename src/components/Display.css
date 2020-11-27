@@ -6,7 +6,12 @@
     font-weight: 600;
 
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
     padding-right: 5px;
+
+}
+.display span {
+    font-size: 0.3em;
 }
